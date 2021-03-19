@@ -2,9 +2,10 @@
 <html lang="en">
 <style>
   html {
-  scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;
+  }
 </style>
+
 <head>
   <title>Shao Keat</title>
   <!-- Favicon -->
@@ -17,30 +18,49 @@
 </head>
 
 <body>
-  <header class="header" id="header-main">
+  <header class="header d-lg-block d-md-none" id="header-main">
     <!-- Topbar -->
     <div id="navbar-top-main" class="navbar-top bg-white border-bottom py-4">
       <div class="container d-flex justify-content-center">
-        <a class="navbar-brand" href="index.html">
-          <img alt="Image placeholder" src="assets/img/brand/Keat Logo.png" id="navbar-logo" style="height: 45px;">
-        </a>
+        <img alt="Image placeholder" src="assets/img/brand/Keat Logo.png" id="navbar-logo" style="height: 45px;">
       </div>
     </div>
   </header>
-  <header class="header sticky-top">
+  <header class="header d-lg-block d-md-none sticky-top">
     <!-- Main navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg navbar-transparent bg-white py-1" id="navbar-main">
-      <div class="container">
-        <!-- Navbar collapse trigger -->
-        <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
-          aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light bg-white py-lg-1" id="navbar-main">
+      <div class="container d-flex justify-content-center">
         <!-- Navbar nav -->
-        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbar-main-collapse">
+        <div class="">
           <ul class="navbar-nav align-items-lg-center">
             <li class="nav-item active">
               <a class="nav-link" href="#header-main">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Overview</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <header class="header d-lg-none d-md-block sticky-top" id="header-small">
+    <nav class="navbar navbar-horizontal navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img alt="Image placeholder" src="assets/img/brand/Keat Logo.png" id="navbar-logo" style="height: 45px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary"
+          aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-primary">
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Overview</a>
@@ -65,15 +85,15 @@
                 <h2 class="text-primary lh-100" style="font-family: 'Oswald', sans-serif;">你好, こんにちは</h2>
                 <h2 class="display-1 font-weight-600 text-white text-uppercase lh-100"
                   style="font-family: 'Oswald', sans-serif;">HELLO</h2>
-                <p class="lead text-dark ml-1">I'm Shao Keat, an experienced <span class="font-weight-bold">Web / UI UX /
+                <p class="lead text-dark ml-1">I'm Shao Keat, an experienced <span class="font-weight-bold">Web / UI UX
+                    /
                     Front-end Developer!</span></p>
                 <div class="mt-4 ml-1">
                   <a href="#" class="btn btn-sm btn-outline-dark d-none d-lg-inline-block">Hire me</a>
                 </div>
               </div>
               <div class="col-lg-6 mt-5 mt-lg-0 align-self-end">
-                <img alt="Image placeholder" src="assets/img/theme/light/model-m-1.png" class="img-fluid float-right"
-                  style="height: 600px;">
+                <img alt="Image placeholder" src="assets/img/theme/light/model-m-1.png" class="img-fluid float-right">
               </div>
             </div>
           </div>
