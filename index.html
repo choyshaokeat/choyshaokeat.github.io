@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+</style>
 <head>
   <title>Shao Keat</title>
   <!-- Favicon -->
@@ -15,15 +19,17 @@
 <body>
   <header class="header" id="header-main">
     <!-- Topbar -->
-    <div id="navbar-top-main" class="navbar-top bg-white pb-0 pt-4">
+    <div id="navbar-top-main" class="navbar-top bg-white border-bottom py-4">
       <div class="container d-flex justify-content-center">
         <a class="navbar-brand" href="index.html">
           <img alt="Image placeholder" src="assets/img/brand/Keat Logo.png" id="navbar-logo" style="height: 45px;">
         </a>
       </div>
     </div>
+  </header>
+  <header class="header sticky-top">
     <!-- Main navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg navbar-transparent bg-white sticky-top" id="navbar-main">
+    <nav class="navbar navbar-main navbar-expand-lg navbar-transparent bg-white py-1" id="navbar-main">
       <div class="container">
         <!-- Navbar collapse trigger -->
         <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
@@ -34,40 +40,142 @@
         <div class="collapse navbar-collapse d-flex justify-content-center" id="navbar-main-collapse">
           <ul class="navbar-nav align-items-lg-center">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="#header-main">Home</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Overview</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">About me</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+
+  <!-- Main Content -->
   <div class="main-content">
-    <div id="headers-header-15" title="headers/header-15.html">
-      <section class="slice pb-0 bg-gray-300">
+    <div id="home">
+      <section class="slice pt-7 pb-0 bg-gray-400">
         <div class="container d-flex align-items-end px-0 pt-4">
           <div class="col">
             <div class="row align-items-center justify-content-around">
               <div class="col-lg-6 text-center text-lg-left">
-                <h2 class="display-1 font-weight-600 text-white text-uppercase lh-100" style="font-family: 'Oswald', sans-serif;">HELLO</h2>
-                <p class="lead text-dark ml-1">I'm Shao Keat, an experienced <span class="text-primary font-weight-bold">UIUX / Front-end Developer!</span></p>
+                <h2 class="text-primary lh-100" style="font-family: 'Oswald', sans-serif;">你好, こんにちは</h2>
+                <h2 class="display-1 font-weight-600 text-white text-uppercase lh-100"
+                  style="font-family: 'Oswald', sans-serif;">HELLO</h2>
+                <p class="lead text-dark ml-1">I'm Shao Keat, an experienced <span class="font-weight-bold">Web / UI UX /
+                    Front-end Developer!</span></p>
                 <div class="mt-4 ml-1">
-                  <a href="#" class="btn btn-sm btn-outline-dark rounded-pill hover-translate-y-n3 d-none d-lg-inline-block">Hire me</a>
+                  <a href="#" class="btn btn-sm btn-outline-dark d-none d-lg-inline-block">Hire me</a>
                 </div>
               </div>
               <div class="col-lg-6 mt-5 mt-lg-0 align-self-end">
-                <img alt="Image placeholder" src="assets/img/theme/light/model-m-1.png" class="img-fluid float-right">
+                <img alt="Image placeholder" src="assets/img/theme/light/model-m-1.png" class="img-fluid float-right"
+                  style="height: 600px;">
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <div id="call-to-action-call-to-action-6" title="call-to-action/call-to-action-6.html">
+      <section class="slice bg-primary bg-cover bg-size--cover"
+        style="background-image: url('assets/img/backgrounds/img-6.jpg');">
+        <span class="mask bg-primary opacity-7"></span>
+        <div class="container py-5">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-10 text-center">
+              <h3 class="display-4 font-weight-700 text-white text-uppercase"
+                style="font-family: 'Oswald', sans-serif;">WORK HARD, PLAY HARD</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div id="contact">
+    <section class="slice slice-lg bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card mb-0 py-5 px-5 box-shadow-3">
+              <div class="card-body">
+                <h6 class="h2 border-bottom">
+                  <strong style="font-family: 'Oswald', sans-serif;">GET IN TOUCH?</strong>
+                </h6>
+                <div class="mt-4">
+                  <p class="mb-1 text-primary">
+                    <span class="badge badge-secondary badge-md badge-circle mr-1">
+                      <i class="fas fa-phone text-primary p-0 m-0"></i>
+                    </span>
+                    +6017-5998387
+                  </p>
+                  <p class="mb-1 text-primary">
+                    <span class="badge badge-secondary badge-md badge-circle mr-1">
+                      <i class="fas fa-envelope text-primary p-0 m-0"></i>
+                    </span>
+                    choyshaokeat@gmail.com
+                  </p>
+                </div>
+                <div class="btn-container mt-4">
+                  <a href="mailto:choyshaokeat@gmail.com" class="btn btn-sm btn-primary">Contact me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-lg-0 mt-sm-5 d-flex align-items-center justify-content-center">
+            <a class="mr-7" href="https://www.instagram.com/shaokeat/" target="_blank">
+              <i class="fab fa-instagram fa-3x text-muted"></i>
+            </a>
+            <a class="mr-7" href="https://www.linkedin.com/in/shaokeat/" target="_blank">
+              <i class="fab fa-linkedin fa-3x text-muted"></i>
+            </a>
+            <a class="" href="https://github.com/choyshaokeat" target="_blank">
+              <i class="fab fa-github fa-3x text-muted"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer 2 -->
+  <div id="footers-footer-2" title="footers/footer-2.html">
+    <footer class="footer p-0 bg-gray-300" id="footer-main">
+      <div class="container">
+        <div class="py-2">
+          <div class="row align-items-md-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div class="d-flex align-items-center">
+                <p class="text-sm mb-0">&copy; 2020 <span class="text-primary font-weight-bold">Choy Shao Keat.</span>
+                  All rights reserved.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.instagram.com/shaokeat/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/in/shaokeat/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/choyshaokeat" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
