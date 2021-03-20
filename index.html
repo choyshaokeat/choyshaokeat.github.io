@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
 
 <head>
   <meta charset="utf-8" />
@@ -19,13 +14,15 @@
   <link rel="stylesheet" href="assets/css/purpose.css" id="stylesheet">
   <!-- Animation -->
   <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body>
   <header class="header d-none d-lg-block" id="header-main">
     <!-- Topbar -->
     <div id="navbar-top-main" class="navbar-top bg-white py-4">
-      <div class="container d-flex justify-content-center">
+      <div class="container d-flex justify-content-center animated fadeInDown">
         <img alt="Image placeholder" src="assets/img/brand/Keat Logo.png" id="navbar-logo" style="height: 45px;">
       </div>
     </div>
@@ -35,16 +32,19 @@
     <nav class="navbar navbar-main navbar-expand-lg navbar-light bg-white py-lg-1 shadow" id="navbar-main">
       <div class="container d-flex justify-content-center">
         <!-- Navbar nav -->
-        <div class="">
+        <div class="animated fadeIn">
           <ul class="navbar-nav align-items-lg-center">
             <li class="nav-item active">
               <a class="nav-link" href="#header-main">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Overview</a>
+              <a class="nav-link" href="#slogan">About me</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#contact">Project</a>
             </li>
           </ul>
         </div>
@@ -53,7 +53,7 @@
   </header>
   <span id="top"></span>
   <header class="header d-block d-lg-none sticky-top" id="header-small">
-    <nav class="navbar navbar-horizontal navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-horizontal navbar-expand-lg navbar-light bg-white shadow">
       <div class="container">
         <a class="navbar-brand" href="#top">
           <img alt="Image placeholder" src="assets/img/brand/Keat Logo.png" id="navbar-logo" style="height: 35px;">
@@ -68,10 +68,13 @@
               <a class="nav-link" href="#top">Home</a>
             </li>
             <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
-              <a class="nav-link" href="index.html">Overview</a>
+              <a class="nav-link" href="#slogan">About me</a>
             </li>
             <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#contact">Project</a>
             </li>
           </ul>
         </div>
@@ -81,6 +84,7 @@
 
   <!-- Main Content -->
   <div class="main-content">
+    <!-- Home -->
     <div id="home">
       <section class="slice slice-lg pb-0 bg-gray-400 px-4 px-md-0">
         <div class="container d-flex align-items-end px-0 pt-4">
@@ -89,13 +93,14 @@
               <div class="col-lg-6 text-center text-lg-left">
                 <h2 class="text-primary lh-100 animated flipInX" style="font-family: 'Oswald', sans-serif;">你好, こんにちは
                 </h2>
-                <h2 class="display-1 font-weight-600 text-white text-uppercase lh-100 animated fadeInUp ml-n1"
-                  style="font-family: 'Oswald', sans-serif;">HELLO</h2>
+                <h2
+                  class="display-1 font-weight-600 text-white text-uppercase lh-100 animated fadeInUp ml-n1 text-title">
+                  HELLO</h2>
                 <p class="lead text-dark">I'm Shao Keat, an experienced <span class="font-weight-bold">Web / UI UX
                     /
                     Front-end Developer!</span></p>
                 <div class="mt-4">
-                  <a href="#" class="btn rounded-lg btn-sm btn-outline-dark">Hire me</a>
+                  <a href="#contact" class="btn rounded-lg btn-sm btn-outline-dark">Hire me</a>
                 </div>
               </div>
               <div class="col-lg-6 mt-5 mt-lg-0 align-self-end">
@@ -106,22 +111,62 @@
         </div>
       </section>
     </div>
-    <div id="call-to-action-call-to-action-6" title="call-to-action/call-to-action-6.html">
+
+    <!-- Slogan -->
+    <div id="slogan" title="call-to-action/call-to-action-6.html">
       <section class="slice bg-primary bg-cover bg-size--cover px-4 px-md-0"
         style="background-image: url('assets/img/backgrounds/img-6.jpg');">
         <span class="mask bg-primary opacity-7"></span>
         <div class="container py-5">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-10 text-center">
-              <h3 class="display-4 font-weight-700 text-white text-uppercase"
-                style="font-family: 'Oswald', sans-serif;">WORK HARD, PLAY HARD</h3>
+              <h3 class="display-4 font-weight-700 text-white text-uppercase text-title">WORK HARD, PLAY HARD</h3>
             </div>
           </div>
         </div>
       </section>
     </div>
+
+    <!-- Education -->
+    <div id="education">
+      <section class="slice slice-lg pb-8 px-4 px-md-0 bg-gray-100">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-lg-12 text-center text-lg-left">
+              <p class="text-primary mb-0 animated slower infinite headShake"><i
+                  class="fas fa-graduation-cap fa-2x"></i></p>
+              <h2 class="mt-0">
+                My <strong class="text-title">EDUCATION</strong>
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card rounded-xl">
+                <div class="card-body">
+                  <ul class="timeline">
+                    <li class="event" data-date="2016">
+                      <h6 class="font-weight-bolder ls-n">Foundation in Information and Communication Technology</h6>
+                      <p class="text-sm mb-0">UNIVERSITI TEKNOLOGI PETRONAS, MALAYSIA</p>
+                      <p class="text-sm text-primary mb-0">CGPA: 3.82</p>
+                    </li>
+                    <li class="event" data-date="2021">
+                      <h6 class="font-weight-bolder ls-n">Bachelor of Information Technology (HONS)</h6>
+                      <p class="text-sm mb-0">UNIVERSITI TEKNOLOGI PETRONAS, MALAYSIA</p>
+                      <p class="text-sm text-primary mb-0">CGPA: 3.83</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
   </div>
-  <div id="features-features-11" title="features/features-11.html">
+
+  <!-- Language Spoken -->
+  <div id="language-spoken">
     <section class="slice slice-lg pb-8 px-4 px-md-0">
       <div class="container">
         <div class="row mb-5">
@@ -135,7 +180,7 @@
         <div class="row align-items-md-center text-center">
           <div class="col-lg-3 col-6 mb-0">
             <div class="mb-3 mb-lg-0">
-              <div class="card rounded-xl">
+              <div class="card rounded-xl hover-scale-110">
                 <div class="card-body">
                   <div class="pt-3">
                     <span class="badge bg-dark text-center text-white rounded-lg avatar-lg">ENG</span>
@@ -148,20 +193,7 @@
           </div>
           <div class="col-lg-3 col-6 mb-0">
             <div class="mb-3 mb-lg-0">
-              <div class="card rounded-xl">
-                <div class="card-body">
-                  <div class="pt-3">
-                    <span class="badge bg-dark text-center text-white rounded-lg avatar-lg">华语</span>
-                    <span class="d-block mt-4 h3 text-primary">你好吗?</span>
-                    <span class="d-block mt-2 h6 text-xs">MANDARIN</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-6 mb-0">
-            <div class="">
-              <div class="card rounded-xl">
+              <div class="card rounded-xl hover-scale-110">
                 <div class="card-body">
                   <div class="pt-3">
                     <span class="badge bg-dark text-center text-white rounded-lg avatar-lg">MALAY</span>
@@ -174,7 +206,20 @@
           </div>
           <div class="col-lg-3 col-6 mb-0">
             <div class="">
-              <div class="card rounded-xl">
+              <div class="card rounded-xl hover-scale-110">
+                <div class="card-body">
+                  <div class="pt-3">
+                    <span class="badge bg-dark text-center text-white rounded-lg avatar-lg">华语</span>
+                    <span class="d-block mt-4 h3 text-primary">你好吗?</span>
+                    <span class="d-block mt-2 h6 text-xs">MANDARIN</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mb-0">
+            <div class="">
+              <div class="card rounded-xl hover-scale-110">
                 <div class="card-body">
                   <div class="pt-3">
                     <span class="badge bg-dark text-center text-white rounded-lg avatar-lg">粤语</span>
@@ -189,6 +234,8 @@
       </div>
     </section>
   </div>
+
+  <!-- Contact -->
   <div id="contact">
     <section class="slice slice-lg bg-secondary px-4 px-md-0">
       <div class="container">
@@ -197,7 +244,7 @@
             <div class="card rounded-xl mb-0 py-4 px-5 box-shadow-3">
               <div class="card-body">
                 <h6 class="h2 pb-2 border-bottom">
-                  Get in <strong style="font-family: 'Oswald', sans-serif;">TOUCH?</strong>
+                  Get in <strong class="text-title">TOUCH?</strong>
                 </h6>
                 <div class="mt-3">
                   <p class="mb-1 text-primary">
@@ -235,6 +282,7 @@
         </div>
       </div>
     </section>
+  </div>
   </div>
 
   <!-- Footer 2 -->
