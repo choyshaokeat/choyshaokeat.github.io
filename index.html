@@ -10,6 +10,7 @@
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Page CSS -->
   <link rel="stylesheet" href="assets/libs/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
   <!-- Purpose CSS -->
   <link rel="stylesheet" href="assets/css/purpose.css" id="stylesheet">
   <!-- Animation -->
@@ -38,7 +39,10 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="C:/Users/choys/Documents/GitHub/shaokeat.io/project.html">Project</a>
+              <a class="nav-link" href="#skills">About me</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#contact">Contact</a>
@@ -64,7 +68,10 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
-              <a class="nav-link" href="#contact">Project</a>
+              <a class="nav-link" href="#skills">About me</a>
+            </li>
+            <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
               <a class="nav-link" href="#contact">Contact</a>
@@ -327,7 +334,7 @@
   </div>
 
   <!-- Projects -->
-  <div id="projects">
+  <div id="project">
     <section class="slice slice-lg bg-gray-200 px-4 px-md-0">
       <div class="container">
         <div class="row mb-5">
@@ -350,10 +357,10 @@
                   Roomy
                 </h3>
                 <p class="text-sm mb-0">Automated Student Accommodation Booking System</p>
-                <button type="button" class="btn btn-secondary btn-sm rounded-lg mt-3 animated infinite slow headShake" data-toggle="modal"
-                  data-target=".modal-foododo">
-                  Discover more<i class="fas fa-angle-right ml-1"></i>
-                </button>
+                <a href="https://www.youtube.com/watch?v=fp4mXC357do"
+                  class="btn btn-secondary btn-sm rounded-lg mt-3" data-fancybox>
+                  <i class="fas fa-play mr-2"></i>Watch video
+                </a>
               </div>
             </div>
 
@@ -375,10 +382,11 @@
                   </p>
                 </div>
                 <div class="mt-auto px-1">
-                  <button type="button" class="btn btn-outline-secondary btn-sm rounded-lg animated infinite slow headShake" data-toggle="modal"
-                    data-target=".modal-foododo">
-                    Discover more<i class="fas fa-angle-right ml-1"></i>
-                  </button>
+                  <a href="https://www.youtube.com/watch?v=OQvRZ8BZD9A"
+                    class="btn btn-outline-secondary btn-sm rounded-lg mt-3"
+                    data-fancybox>
+                    <i class="fas fa-play mr-2"></i>Watch video
+                  </a>
                 </div>
               </div>
             </div>
@@ -402,8 +410,9 @@
                   </p>
                 </div>
                 <div class="mt-auto px-1">
-                  <button type="button" class="btn btn-outline-secondary btn-sm rounded-lg animated infinite slow headShake" data-toggle="modal"
-                    data-target=".modal-foododo">
+                  <button type="button"
+                    class="btn btn-outline-secondary btn-sm rounded-lg"
+                    data-toggle="modal" data-target=".modal-foododo">
                     Discover more<i class="fas fa-angle-right ml-1"></i>
                   </button>
                 </div>
@@ -420,8 +429,8 @@
                   Foododo
                 </h3>
                 <p class="text-sm mb-0">All In One Food Ordering Platform</p>
-                <button type="button" class="btn btn-secondary btn-sm rounded-lg mt-3 animated infinite slow headShake" data-toggle="modal"
-                  data-target=".modal-foododo">
+                <button type="button" class="btn btn-secondary btn-sm rounded-lg mt-3"
+                  data-toggle="modal" data-target=".modal-foododo">
                   Discover more<i class="fas fa-angle-right ml-1"></i>
                 </button>
               </div>
@@ -671,6 +680,7 @@
   <script src="assets/js/purpose.js"></script>
   <!-- Demo JS - remove it when starting your project -->
   <script src="assets/js/demo.js"></script>
+  <script src="assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
